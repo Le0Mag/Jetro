@@ -1,0 +1,165 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../images/bg.png);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  font-family: 'Bebas', sans-serif;
+  font-weight: 400;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header__logo {
+  color: #f3af9d;
+  font-size: 36px;
+}
+
+.header__logo span {
+  color: #e8603c;
+}
+
+.header__menu-link {
+  font-size: 16px;
+  color: #b9b9b9;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.header__menu li + li {
+  margin-left: 30px;
+}
+
+.header__menu-link--activ, 
+.header__menu-link:hover{
+  color: #e8663c;
+  transition: .5s;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider::before 
+{
+  content: "";
+  position: absolute;
+  height: 61px;
+  width: calc(100vw / 2 - 960px / 2);
+  background-color: rgba(232, 96, 60, .5);
+  left: 0;
+  top: 0;
+} 
+
+.slider::after {
+  content: "";
+  position: absolute;
+  height: 61px;
+  width: calc(100vw / 2 - 960px / 2);
+  background-color: rgba(232, 96, 60, .5);
+  right: 0;
+  top: 0;
+}
+
+.slider__item {
+  min-height: 400px;
+  position: relative;
+}
+
+.slider__item-description {
+  background-color: rgb(232, 102, 60);
+  opacity: 0.8;
+  width: 410px;
+  height: 125px;
+  color: #fff;
+  position: absolute;
+  left: 35px;
+  bottom: 35px;
+}
+
+.slider__item-title {
+  font-family: 'Bebas', cursive;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.slider__item-text {
+  font-family: 'HelveticaNeue', sans-serif;  
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.slick-arrow{
+	border: none;
+	outline: none;
+	background-color: transparent;
+  position: absolute;
+  top: 155px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.slick-prev{
+  left: 25px;
+}
+.slick-next{
+  right: 25px;
+}
+
+.slider__nav {
+  margin-top: 17px;
+  cursor: pointer;
+}
+
+.slider__nav-item {
+  min-height: 120px;
+  margin-right: 20px;
+}
+
+/* .slick-active + .slick-active .slider__nav-item {
+  margin-left: 20px;
+} */
+
+
+
+
+
