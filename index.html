@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -17,32 +18,38 @@
 		<div class="container">
 			<div class="header__inner">
 				<a class="header__logo" href="#">
-					<span>JET</span>RO
+					<img src="images/logo.png" alt="">
 				</a>
 
 				<nav class="header__menu">
-					<ul>
-						<li>
+					<div class="header__menu-btn">
+						<div class="header__menu-row"></div>
+						<div class="header__menu-row"></div>
+						<div class="header__menu-row"></div>
+					</div>		
+
+					<ul class="header__menu-list">
+						<li class="header__menu-item">
 							<a class="header__menu-link header__menu-link--activ" href="#">
 								Home
 							</a>
 						</li>
-						<li>
+						<li class="header__menu-item">
 							<a class="header__menu-link" href="#">
 								About Us
 							</a>
 						</li>
-						<li>
+						<li class="header__menu-item">
 							<a class="header__menu-link" href="#">
 								Blog
 							</a>
 						</li>
-						<li>
+						<li class="header__menu-item">
 							<a class="header__menu-link" href="#">
 								Portfolio
 							</a>
 						</li>
-						<li>
+						<li class="header__menu-item">
 							<a class="header__menu-link" href="#">
 								Contact US
 							</a>
@@ -57,8 +64,7 @@
 		<div class="container">
 			<div class="slider__inner">
 
-				<div class="slider__item wer">
-					<img src="images/slider_01.jpg" alt="">
+				<div class="slider__item" style="background-image: url(images/slider_01.jpg);">
 					<div class="slider__item-description">
 						<p class="slider__item-title">
 							Slide One
@@ -69,8 +75,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="slider__item">
-					<img src="images/slider_02.jpg" alt="">
+				<div class="slider__item" style="background-image: url(images/slider_02.jpg);">
 					<div class="slider__item-description">
 						<p class="slider__item-title">
 							Slide Two
@@ -81,8 +86,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="slider__item">
-					<img src="images/slider_03.jpg" alt="">
+				<div class="slider__item" style="background-image: url(images/slider_03.jpg);">
 					<div class="slider__item-description">
 						<p class="slider__item-title">
 							Slide Three
@@ -93,8 +97,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="slider__item">
-					<img src="images/slider_04.jpg" alt="">
+				<div class="slider__item" style="background-image: url(images/slider_04.jpg);">
 					<div class="slider__item-description">
 						<p class="slider__item-title">
 							Slide Four
@@ -105,8 +108,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="slider__item">
-					<img src="images/slider_05.jpg" alt="">
+				<div class="slider__item" style="background-image: url(images/slider_05.jpg);">
 					<div class="slider__item-description">
 						<p class="slider__item-title">
 							Slide Five
@@ -117,8 +119,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="slider__item">
-					<img src="images/slider_06.jpg" alt="">
+				<div class="slider__item" style="background-image: url(images/slider_06.jpg);">
 					<div class="slider__item-description">
 						<p class="slider__item-title">
 							Slide Six
@@ -133,28 +134,192 @@
 			</div>
 
 			<div class="slider__nav">
-				<div class="slider__nav-item">
-					<img src="images/slider_nav_01.jpg" alt="">
+				<div class="slider__list">
+					<div class="slider__nav-item" style="background-image: url(images/slider_01.jpg);"></div>
 				</div>
-				<div class="slider__nav-item">
-					<img src="images/slider_nav_02.jpg" alt="">
+				<div class="slider__list">
+					<div class="slider__nav-item" style="background-image: url(images/slider_02.jpg);"></div>
 				</div>
-				<div class="slider__nav-item">
-					<img src="images/slider_nav_03.jpg" alt="">
+				<div class="slider__list">
+					<div class="slider__nav-item" style="background-image: url(images/slider_03.jpg);"></div>
 				</div>
-				<div class="slider__nav-item">
-					<img src="images/slider_nav_04.jpg" alt="">
+				<div class="slider__list">
+					<div class="slider__nav-item" style="background-image: url(images/slider_04.jpg);"></div>
 				</div>
-				<div class="slider__nav-item">
-					<img src="images/slider_nav_05.jpg" alt="">
+				<div class="slider__list">
+					<div class="slider__nav-item" style="background-image: url(images/slider_05.jpg);"></div>
 				</div>
-				<div class="slider__nav-item">
-					<img src="images/slider_nav_06.jpg" alt="">
+				<div class="slider__list">
+					<div class="slider__nav-item" style="background-image: url(images/slider_06.jpg);"></div>
 				</div>
 			</div>
 
 		</div>
 	</section>
+
+	<section class="items">
+		<div class="container">
+			<div class="items__inner">
+
+				<div class="item">
+					<div class="item__title item__title--portf">
+						Check out my latest
+						portfolio items
+					</div>
+					<p class="item__text">
+						Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed
+						magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras
+						varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+					</p>
+					<div class="item__btn">	
+						<a class="item__link" href="#">More</a>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item__title  item__title--work">
+						Offer Top Notch Quality
+						Work & Services
+					</div>
+					<div class="item__text">
+						Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed
+						magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras
+						varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+					</div>
+					<div class="item__btn">	
+						<a class="item__link" href="#">More</a>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item__title  item__title--follow">
+						Follow Me on Twitter,
+						Facebook & Pinterest
+					</div>
+					<div class="item__text">
+						Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed
+						magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras
+						varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+					</div>
+					<div class="item__btn">	
+						<a class="item__link" href="#">More</a>
+					</div>					
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="works">
+		<div class="container">
+			<div class="works__title">
+				<span>Recent Works</span>
+			</div>
+			<div class="works__inner">
+				<div class="works__item">
+					<a class="works__item-link" href="#"><img src="images/works_01.png" alt=""></a>
+					<div class="works__item-text">
+						<a class="works__item-title" href="#">Character Design</a>
+						<p><a class="works__item-data" href="#">June 15, 2012</a></p>
+					</div>
+				</div>
+				<div class="works__item">
+					<a class="works__item-link" href="#"><img src="images/works_02.png" alt=""></a>
+					<div class="works__item-text">
+						<a class="works__item-title" href="#">Brochure Design</a>
+						<p><a class="works__item-data" href="#">June 15, 2012</a></p>
+					</div>
+				</div>
+				<div class="works__item">
+					<a class="works__item-link" href="#"><img src="images/works_03.png" alt=""></a>
+					<div class="works__item-text">
+						<a class="works__item-title" href="#">Social Media Buttons</a>
+						<p><a class="works__item-data" href="#">June 15, 2012</a></p>
+					</div>
+				</div>
+				<div class="works__item">
+					<a class="works__item-link" href="#"><img src="images/works_04.png" alt=""></a>
+					<div class="works__item-text">
+						<a class="works__item-title" href="#">10 Amazing Websites</a>
+						<p><a class="works__item-data" href="#">June 15, 2012</a></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+
+				<div class="footer__item footer__item-about">
+					<div class="footer__item-title">
+						About Jetro
+					</div>
+					<div class="footer__item-content">
+						<p class="footer__content-text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at
+						tritani aperiri. Adhuc invenire convenire his ea. Id mei vitae denique, in eam commodo veritus disputando.</p>
+
+						<p class="footer__content-text"> Pro et erant delicata, eu vim essent imperdiet accommodare, dictas deseruisse ius an. Solet everti
+							definitionem id ius, sonet oporteat cu vim.</p>
+					</div>
+				</div>
+
+				<div class="footer__item footer__item-widget">
+					<div class="footer__item-title">
+						Twitter Widget
+					</div>
+					<div class="footer__item-content">
+						<div class="footer__content-text">
+							<a class="footer__pixelmater" href="#">@pixelmater</a>What an awesome design with great functionality :)
+						</div>		
+						<p class="footer__date">about 1 hour ago</p>
+            <div class="footer__content-text">
+              <a class="footer__designdude" href="#">@designdude</a>What an awesome design with great functionality :)
+            </div>
+            <p class="footer__date">about 2 hour ago</p>
+            <div class="footer__content-text">
+              Follow<a class="footer__bestpsdfreebies" href="#">@bestpsdfreebies</a>
+            </div>
+					</div>
+				</div>
+
+				<div class="footer__item footer__item-contact">
+					<div class="footer__item-title">
+						Contact Us
+					</div>
+					<div class="footer__item-content">
+						<div class="footer__content-text">
+							Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at
+							tritani aperiri.
+						</div>		
+						<div class="footer__content-info">
+							<a href="#">information@jetro.com</a>
+							<a href="#">1.222.333.4444</a>
+						</div>
+					</div>
+					<ul class="footer__item-icons icons">
+							<li class="icons__item">
+								<a class="icons__link" href="#"><img src="images/icons/facebook.png" alt=""></a>
+							</li>
+							<li class="icons__item">
+								<a class="icons__link" href="#"><img src="images/icons/twitter.png" alt=""></a>
+							</li>
+							<li class="icons__item">
+								<a class="icons__link" href="#"><img src="images/icons/email.png" alt=""></a>
+							</li>
+							<li class="icons__item">
+								<a class="icons__link" href="#"><img src="images/icons/rss.png" alt=""></a>
+							</li>
+							<li class="icons__item">
+								<a class="icons__link" href="#"><img src="images/icons/vimeo.png" alt=""></a>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
